@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "unit": "jest --config ./config/jest/jest.config.ts",
     "build": "webpack --env mode=development",
     "build:prod": "webpack --env mode=production",
     "start": "webpack serve --env port=3000",
@@ -18,7 +18,7 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.17.5",
-    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-env": "^7.23.2",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.5",
