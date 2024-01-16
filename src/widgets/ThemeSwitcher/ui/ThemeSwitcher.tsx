@@ -4,8 +4,8 @@ import React from 'react';
 import { Theme, useTheme } from 'app/providers/ThemeProvider';
 import LightIcon from 'shared/assets/icons/theme-light.svg';
 import DarkIcon from 'shared/assets/icons/theme-dark.svg';
-import { Button } from 'shared/Button';
-import { ThemeButton } from 'shared/Button/ui/Button';
+import { Button } from 'shared/ui/Button';
+import { ThemeButton } from 'shared/ui/Button/ui/Button';
 import styles from './ThemeSwitcher.module.scss';
 
 interface ThemeSwitcherProps {
