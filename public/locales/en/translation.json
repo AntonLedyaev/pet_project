@@ -7,5 +7,6 @@
   "Страница не найдена": "Page not found",
   "Обновить страницу": "Refresh the page",
   "Произошла непредвиденная ошибка": "Unexpected error occurred",
-  "Выбросить ошибку": "Throw Error"
+  "Выбросить ошибку": "Throw Error",
+  "Переключить": "Toggle"
 }
