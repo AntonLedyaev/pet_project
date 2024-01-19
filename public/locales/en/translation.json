@@ -1,12 +1,13 @@
 {
-  "Главная страница": "Main Page",
+  "Главная": "Main Page",
   "О сайте": "About us",
   "Перевод": "Translate",
   "Тестовый перевод": "Test translation",
-  "Язык": "English",
+  "Русский": "English",
   "Страница не найдена": "Page not found",
   "Обновить страницу": "Refresh the page",
   "Произошла непредвиденная ошибка": "Unexpected error occurred",
   "Выбросить ошибку": "Throw Error",
-  "Переключить": "Toggle"
+  "Переключить": "Toggle",
+  "Короткий язык": "EN"
 }
