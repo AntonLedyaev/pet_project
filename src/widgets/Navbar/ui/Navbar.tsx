@@ -4,6 +4,7 @@ import { Modal } from 'shared/ui/Modal/Modal';
 import React, { useCallback, useState } from 'react';
 import { Button } from 'shared/ui/Button';
 import { ButtonTheme } from 'shared/ui/Button/ui/Button';
+import { LoginModal } from 'features/AuthByUsername';
 import styles from './Navbar.module.scss';
 
 interface NavbarProps {
@@ -14,23 +15,25 @@ export const Navbar = ({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const [isAuthModalOpen, setAuthIsModalOpen] = useState(false);
 
-    const handleModalToggle = useCallback(() => {
-        setAuthIsModalOpen((prev) => !prev);
+    const handleModalClose = useCallback(() => {
+        setAuthIsModalOpen(false);
+    }, []);
+
+    const handleModalOpen = useCallback(() => {
+        setAuthIsModalOpen(true);
     }, []);
 
     return (
         <div className={classNames(styles.Navbar, {}, [className])}>
             <Button
                 className={styles.links}
-                onClick={handleModalToggle}
+                onClick={handleModalOpen}
                 theme={ButtonTheme.CLEAR_INVERTED}
             >
                 {t('Войти')}
             </Button>
             {/* eslint-disable-next-line i18next/no-literal-string */}
-            <Modal isOpen={isAuthModalOpen} onClose={handleModalToggle}>
-                bibaibaibiabiab iaibaibiabia ibaibaibaibaiba ibiaib iabiiab iaibaibaiab iiabiabiabib
-            </Modal>
+            <LoginModal isOpen={isAuthModalOpen} onClose={handleModalClose} />
         </div>
     );
 };
